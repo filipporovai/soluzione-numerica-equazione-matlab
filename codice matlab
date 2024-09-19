@@ -1,0 +1,30 @@
+Codice risolutivo su Matlab per un'equazione in forma numerica
+
+
+% Definizione dell'equazione come funzione anonima
+equazione = @(x) [scrivere equazione];
+
+% Punto di partenza per la ricerca della soluzione
+x0 = 0.001;
+
+% Risoluzione numerica dell'equazione utilizzando fsolve
+soluzione_numerica = fsolve(equazione, x0);
+
+% Visualizzazione della soluzione numerica
+disp(soluzione_numerica);
+
+Esempio:
+
+equazione = @(x) 0.9*(0.676 - 24*x)^0.13*pi*0.25*(x)^2*(2*1000*100000)^0.5 - 0.05;
+x0 = 0.001;
+soluzione_numerica = fsolve(equazione, x0);
+disp(soluzione_numerica);
+(soluzione: x=0.0023)
+
+Equation solved.
+
+fsolve completed because the vector of function values is near zero
+as measured by the value of the function tolerance, and
+the problem appears regular as measured by the gradient.
+
+<stopping criteria details>
